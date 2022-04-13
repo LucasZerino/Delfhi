@@ -14,7 +14,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background: rgba(230, 228, 228, 0.884);
+    background: rgba(228, 229, 230, 0.884);
 }
 
 .pageContainer{
@@ -219,7 +219,18 @@ body{
     background-color: white;
     transform: scale(0.7);
     border-radius: 8px;
-    box-shadow: 0 0 80px 1px #e8590c62;
+    box-shadow: 0 0 30px 1px #e8590c;
+    display: none;
+}
+
+.lefContainer .card.active{
+    height: 450px;
+    width: 310px;
+    background-color: white;
+    transform: scale(0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 80px 1px #e9c8a349;
+    display: flex;
 }
 
 .lefContainer .card .info{
@@ -277,13 +288,40 @@ body{
 .photo{
     height: 100%;
     width: 100%;
-    background-image: url(./unimed.png);
     background-repeat: no-repeat;
     position: absolute;
     bottom: 0;
     background-size: 100% 100%;
     border-radius: 8px;
     transition: 1s;
+}
+
+.card.unimed .photo{
+    background-image: url(../imgs/unimed.png);
+}
+
+.card.hapvida .photo{
+    background-image: url(../imgs/hapvida.png);
+}
+
+.card.humana .photo{
+    background-image: url(../imgs/humana.png);
+}
+
+.card.bradesco .photo{
+    background-image: url(../imgs/bradesco.png);
+}
+
+.card.delfhi .photo{
+    background-image: url(../imgs/delfhi.png);
+}
+
+.card.sulamerica .photo{
+    background-image: url(../imgs/sulamerica.png);
+}
+
+.card.amil .photo{
+    background-image: url(../imgs/amil.png);
 }
 
 
@@ -299,10 +337,10 @@ body{
     bottom: -70px;
     font-size: 25px;
     color: whitesmoke;
-    background-color: #e85a0c;
+    background-color: #ff6e20;
     width: 100%;
     padding: 5px 0;
-    font-size: 30px;
+    font-size: 27px;
     font-family: 'Poppins';
     font-weight: 600;
     text-align: center;
