@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600;700&display=swap');
+:root{
+    --primary-color: #e85a0c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.pageContainer{
+    display: flex;
+    width: 100%;
+    height: 84vh;
+}
+
+.lefContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-left: 50px;
+}
+
+.midContainer{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.dirContainer{
+    flex: 1;
+}
+.imagem{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50vw;
+    height: 50vh;
+    z-index: -2;
+}
+.navBar{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.containerNav{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.centerText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lefContainer .spanTit{
+    text-align: center;
+}
+.spanTit{
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.spanTit.bot{
+    position: relative;
+    margin-top: 100px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.subTit{
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+    color: #777;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.cardContainer .card{
+    position: relative;
+    top: 100px;
+    right: 50px;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.cardContainer .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.cardContainer .card:hover .box {
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, #fff,#e85a0c );
+}
+
+.cardContainer .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+
+.cardContainer .card .box .content h2{
+    position: absolute;
+    font-family: 'Teko';
+    font-weight: 500;
+    top: -10px;
+    right: 30px;
+    font-size: 4em;
+    color: rgba(232, 89, 12, 0.021);
+    transition: 0.5s;
+    pointer-events: none;
+}
+.cardContainer .card:hover .box .content h2{
+    color: rgba(255, 255, 255, 0.082);
+}
+
+.cardContainer .card .box .content h3{
+    font-family: 'Teko';
+    font-size: 2.4em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.cardContainer .card:hover .box .content h3{
+    color: #fff;
+}
+
+.cardContainer .card .box .content p{
+    font-family: 'Teko';
+    font-size: 3em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.cardContainer .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--primary-color);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
