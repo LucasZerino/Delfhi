@@ -4,48 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
     <title>Delfhi Corretora | Planos de Saúde</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target='.navbar' data-bs-offset="85">
     <!------------------NAVBAR----------------->
-    <nav class="navBar">
-        <nav class="navbar navbar-light bg-transparent">
-            <div class="container">
-              <a class="navbar-brand" href="/">
-                <img src="./imgs/Sem título-1.png" alt="" width="200" height="44">
-              </a>
-            </div>
-          </nav>
-        <div class="containerNav">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <a class="navbar-brand" href="#">Navbar</a>
-          <a class="navbar-brand" href="#">Navbar</a>
-          <a class="navbar-brand" href="#">Navbar</a>
-        </div>
+    <nav class="navBar">  
     </nav>
     <div class="centerText">
         <span class="spanTit">
-            Está pesquisando qual o plano de saúde que atende melhor suas necessidades?
+            Você está pesquisando plano de saúde?
         </span>
-        <h5>
+        <h5 class="subTitop">
             sua pesquisa acaba aqui.
         </h5>
     </div>
     <div class="pageContainer">
         <div class="lefContainer">
+            <img src="./imgs/Sem título-1.png" alt="" width="230" height="74"> 
             <h1 class="spanTit">
                 Desde 2001
             </h1>
             <h2 class="subTit">
-                 ajudamos
+                Ajudamos
                 pessoas que buscam
                 mais qualidade de vida
                 com o preço que cabe
                 no bolso.
             </h2>
-            <img src="./imgs/grandma-animate.svg">
+            <div class="card">
+                <div class="info">
+                    <div class="name">Unimed</div>
+                    <div class="prof">Parceira Delfhi</div>
+                    <div class="divider"></div>
+                    <div class="bio">Com hospitais e laboratórios próprios, entregamos o melhor para você! 
+                    </div>
+                    <button class="button">SIMULAR</button>
+                </div>
+                <div class="photo"></div>
+                <a class="a2" href="#">Parceiras Delfhi</a>
+            </div>
         </div>
         <img class="imagem" src="./imgs/medicine-animate.svg">
         <div class="midContainer">
@@ -69,15 +68,28 @@
                     atender o mais rápido possível.
                 </h2>
                 <h2 class="subTit">
-                    DEIXE seus dados ou fale agora mesmo pelo whatsapp
+                    Deixe seus dados ou fale agora mesmo pelo whatsapp
                     e o nosso time fará contato o mais breve possível.
                 </h2>
+                <form class="dados">
+                    <input class="import" type="text" placeholder="Nome">
+                    <input class="import" type="text" placeholder="Whatsapp">
+                    <input class="import" type="text" placeholder="Cidade">
+                    <div class="marcadores">
+                         <label class="marcar">
+                            <input  type="radio" name="Tipo de Plano" value="Pessoa Física" checked>&nbsp;Pessoa Fisica
+                        </label>
+                        <label class="marcar">
+                            <input type="radio" name="Tipo de Plano" value="Pessoa Jurídica">&nbsp;Pessoa Jurídica
+                        </label>
+                    </div>
+                    <button class="btn" type="submit">QUERO SIMULAR</button>
+                </form>
             </div>
         </div>
         <div class="dirContainer">
-
+            <a href="https://api.whatsapp.com/send?phone=558432111000"><img  class="wpp" src="./imgs/wpplogo.png"></a>
         </div>
     </div>
-     <!------------------NAVBAR-----------FIM--->
 </body>
 </html>
